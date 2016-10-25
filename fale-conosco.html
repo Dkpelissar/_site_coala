@@ -3,46 +3,58 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
+	<title>Fale Conosco - COALA</title>
 	<link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 	<header>
-		<div id="top">
-			<img src="" alt="">
-		</div>
+        <div id="top">
+            <img src="" alt="">
+        </div>
+		<div id="tudo">
 		<nav id="menu-principal">
 			<ul>
+                <li><img src="logotipo.png" class="logo-menu-principal"/> </li>
 				<li><a href="index.html">Pagina Inicial</a></li>
 				<li><a href="sobre.html">Sobre Nós</a></li>
 				<li><a href="fale-conosco.html">Fale conosco</a></li>
-			</ul>
-			</nav>	
-			<img src="fale-conosco4.png" class="img-fale-conosco"> 
-	<form class="fale-conosco">
-	Nome:
-	<input type=text class="input-nome">  </input> 
-	Sobre Nome:
-	<input type=text class="input-sobrenome">  </input>
-	</br>
-	</br>
-	Email:
-	<input type=text class="input-email" size="58">  </input>
-	</br>
-	</br>	
-	<textarea type=text  cols=67 rows=15> Digite aqui sua mensagem </textarea>
-	</br>
-	
-	
-	<input type="submit" value="Enviar" class="btn-enviar">
-	<input type="reset" value="Limpar" class="btn-limpar">
-	
-	
+			</ul>	
+		</nav>
 
-	</form>
-			
-		
 	</header>
-	
+    <div class="conteudo">
+    <section>
+	<img alt="img-fale-conosco" src="fale-conosco4.png"/>
+    <div class="row">
+    <form>
+        <div class="col">
+        	Nome: <input type="text" name="txnome" size="15" maxlength="150"/>
+        </div>
+        <div class="col">
+        	Sobrenome: <input type="text" name="txsobrenome" size="15" maxlength="150"/>
+        </div>
+        <div class="col">
+        	Email: <input type="text" name="txemail" size="50" maxlength="150"/>
+        </div>
+        <div class="col">
+            <textarea cols="60" rows="15" name="txcomentario" placeholder="Digite aqui sua mensagem..."></textarea>
+        </div>
+        <div class="row-butons">
+            <div class="col">
+                <input type="submit" value="Enviar">
+            </div>
+            <div class="col">
+                <input type="reset" value="Limpar">
+            </div>
+        </div>
+    </form>
+    </div>
+	</section>    
+    </div><!-- FIM DIV.CONTEUDO-->	
+
+    <div class="rodape">
+    	<p>Copyright &copy; <img src="logotipo.png"/></p>
+    </div>
+</div>
 </body>
 </html>
